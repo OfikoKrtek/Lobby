@@ -1,0 +1,4 @@
+lobby-server-name: Lobby
+messages:
+  sending: "&aYou are being teleported to the lobby server..."
+  dont-have-permission: "&cYou don't have permissions to do this."

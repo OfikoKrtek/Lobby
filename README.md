@@ -1,5 +1,5 @@
 # Lobby Spigot plugin
- This plugin adds /lobby command to your Spigot server hooped with BungeeCord or Waterfall.
+ This plugin adds /lobby command to your Spigot server hooked with BungeeCord or Waterfall.
  
 ## Tested versions
 | **Version** | **Tested** |

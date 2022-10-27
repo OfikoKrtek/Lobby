@@ -18,14 +18,16 @@ public class LobbyPlugin extends JavaPlugin {
         this.getServer().getPluginCommand("lobby").setExecutor(new LobbyCommand(this));
     }
 
-    public final ConfigUtil getConfigUtil = new ConfigUtil(this);
+    public final ConfigUtil getConfigUtil  = new ConfigUtil(this);
 
-    public final FileConfiguration getConfig = getConfigUtil.getConfig("config.yml");
+    public FileConfiguration getConfig = getConfigUtil.getConfig("config.yml");
 
     public String getMessage(String index){
         if (getConfig.getConfigurationSection("messages") == null || getConfig.getString("messages." + index) == null) return " ";
         return getConfig.getString("messages." + index);
     }
 
-    public final String getLobbyServerName = getConfig.get("lobby-server-name") != null ? getConfig.get("lobby-server-name").toString() : "Lobby";
+    public final String getLobbyServerName() {
+        return getConfig.get("lobby-server-name") != null ? getConfig.get("lobby-server-name").toString() : "Lobby";
+    }
 }

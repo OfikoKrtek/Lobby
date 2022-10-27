@@ -20,7 +20,7 @@ public class LobbyCommand implements CommandExecutor {
         if(sender instanceof Player player){
             if (command.getPermission() != null && player.hasPermission(command.getPermission())){
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getMessage("sending")));
-                plugin.messageListener.sendPlayer(player, plugin.getLobbyServerName);
+                plugin.messageListener.sendPlayer(player, plugin.getLobbyServerName());
             }
             else player.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getMessage("dont-have-permission")));
         }

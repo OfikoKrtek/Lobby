@@ -2,7 +2,6 @@ main: me.Matthew.Lobby.LobbyPlugin
 name: Lobby
 version: 1.0
 author: Matthew.exe
-api-version: 1.13
 prefix: LobbyCommandPlugin
 description: "Allows Spigot servers to have /lobby command."
 
